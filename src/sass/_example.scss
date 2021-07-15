@@ -1,27 +1,85 @@
-.example {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
-    'Open Sans', 'Helvetica Neue', sans-serif;
-  line-height: 1.5;
-  background-color: #fff;
-  color: #424242;
-  max-width: 960px;
-  padding: 16px;
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+.photo-card {
+  margin: 7px;
+  border: solid rgb(184, 184, 184) 1px;
+}
+img {
+  display: block;
+  width: 340px;
+  height: 220px;
+  object-fit: cover;
+}
+.stats {
+  display: flex;
+  justify-content: space-around;
+}
+.stats-item {
+  display: flex;
+  align-items: center;
 }
 
-.example code {
-  font-family: monospace;
-  font-size: 16px;
-  font-weight: 700;
-  background-color: #009688;
-  color: #fff;
-  padding: 2px 6px;
-  border-radius: 2px;
+.material-icons {
+  margin-right: 8px;
+  color: rgb(156, 133, 255);
 }
-
-.example .background {
-  height: 240px;
-  // Путь к изображениям из SASS-файла всегда такой, как из папки css
-  background-image: url('../images/demo.jpg');
-  background-size: cover;
-  background-position: center;
+.search-form {
+  width: 340px;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.searchQuery {
+  width: 260px;
+  height: 30px;
+  border: solid rgb(131, 117, 255) 2px;
+  border-radius: 6px;
+}
+.photo-card:hover,
+.photo-card:focus {
+  .material-icons {
+    // margin-right: 8px;
+    color: rgb(95, 59, 255);
+    transition: 350ms;
+  }
+  .stats {
+    background-color: rgb(208, 239, 253);
+  }
+  cursor: pointer;
+  border: solid rgb(70, 50, 255) 1px;
+  box-shadow: 5px 5px 5px rgba(154, 147, 140, 0.5), 1px 1px 5px rgba(255, 255, 255, 1);
+  transition: 350ms;
+}
+.btn-search {
+  border: solid rgb(131, 117, 255) 2px;
+  border-radius: 6px;
+  background-color: rgb(234, 234, 255);
+}
+.btn-search:hover {
+  cursor: pointer;
+  background-color: rgb(160, 190, 255);
+  box-shadow: 2px 2px 5px rgba(154, 147, 140, 0.5), 1px 1px 5px rgba(255, 255, 255, 1);
+}
+.btn-more {
+  height: 30px;
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
+  align-items: center;
+  margin-bottom: 20px;
+  border: solid rgb(131, 117, 255) 2px;
+  border-radius: 6px;
+  background-color: rgb(234, 234, 255);
+}
+.btn-more:hover {
+  cursor: pointer;
+  background-color: rgb(160, 190, 255);
+  box-shadow: 2px 2px 5px rgba(154, 147, 140, 0.5), 1px 1px 5px rgba(255, 255, 255, 1);
 }
